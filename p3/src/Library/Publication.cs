@@ -33,5 +33,19 @@ namespace Ucu.Poo.Defense
         {
             this.items.Remove(item);
         }
+
+        /// <summary>
+        /// ¿Por qué agregamos el método en esta clase? Porque es la experta en información.
+        /// </summary>
+        
+        int totalCost = 0;
+        public int Total()
+        {
+            foreach (PublicationItem item in items)
+            {
+                totalCost += (item.Price) * (item.Quantity);
+            }
+            return totalCost;
+        }
     }
 }
