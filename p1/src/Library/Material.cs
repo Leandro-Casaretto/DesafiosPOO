@@ -11,5 +11,18 @@ namespace Ucu.Poo.Defense
             this.Name = name;
             this.Type = type;
         }
+
+        /// <summary>
+        /// Para conocer si el material es peligroso o no, devolvemos el IsDangerous
+        /// de MaterialType.
+        /// </summary>
+        
+        public bool IsDangerous
+        {
+            get
+            {
+                return this.Type.IsDangerous;
+            }
+        }
     }
 }
