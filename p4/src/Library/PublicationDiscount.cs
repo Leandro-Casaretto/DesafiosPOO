@@ -20,18 +20,21 @@ namespace Ucu.Poo.Defense
             {
                 return this.amount;
             }
+            
             set
             {
                 if (value <= 0)
                 {
                     this.amount = value;
                 }
+                
+                /// <summary>
+                /// Realizamos la excepción en caso de que el descuento sea positivo.
+                /// </summary>
                 else
                 {
                     throw new ArgumentException("ERROR. El descuento DEBE ser negativo.");
                 }
-        
-
             }
         }
         public PublicationDiscount(int amount)
