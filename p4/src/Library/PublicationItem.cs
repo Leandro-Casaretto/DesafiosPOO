@@ -1,5 +1,9 @@
 namespace Ucu.Poo.Defense
 {
+
+    /// <summary>
+    /// Implementamos la interfaz que creamos
+    /// </summary>
     public class PublicationItem : IPublicationItem
     {
         public Material Material { get; set; }
