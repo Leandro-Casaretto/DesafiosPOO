@@ -40,8 +40,11 @@ namespace Ucu.Poo.Defense
         
         public string AsText()
         {
-            
             StringBuilder text = new StringBuilder();
+            
+            /// <summary>
+            /// Con un foreach vamos agregando las propiedades.
+            /// /// </summary>
             foreach(PublicationItem item in items)
             {
                 text.Append(item.Material.Name);
