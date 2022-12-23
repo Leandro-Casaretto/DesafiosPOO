@@ -38,7 +38,6 @@ namespace Ucu.Poo.Defense
         /// Como se usa la directiva System.Text, podemos usar un StringBuilder
         /// /// </summary>
         
-        
         public string AsText()
         {
             
