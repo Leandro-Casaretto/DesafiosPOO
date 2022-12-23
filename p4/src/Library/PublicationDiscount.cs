@@ -37,9 +37,11 @@ namespace Ucu.Poo.Defense
                 }
             }
         }
+        /// <summary>
+        /// Creamos el método.
+        /// </summary>
         public PublicationDiscount(int amount)
-        {
-            
+        {           
             this.SubTotal = amount;
         }
     }
